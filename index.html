@@ -8,12 +8,20 @@
         System.transpiler = 'babel';
     </script>
     <script>
-        System.import('js/foo2').then(function(m) {
+        System.config({
+            map: {
+                jquery: 'bower_components/jquery/dist/jquery'
+            }
+        });
+        System.import('js/foo2').then(function (m) {
             console.log(new m.Foo().es6); // yay
+        });
+        System.import('jquery').then(function ($) {
+            $('h1').text('Systemjs ftw!');
         });
     </script>
 </head>
 <body>
-
+    <h1></h1>
 </body>
 </html>
