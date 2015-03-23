@@ -1,0 +1,19 @@
+{
+  "name": "babel",
+  "version": "0.0.0",
+  "authors": [
+    "Joppe Aarts <joppe@apestaartje.info>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "system.js": "~0.15.0",
+    "es6-module-loader": "~0.15.0"
+  }
+}

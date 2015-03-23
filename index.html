@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/systemjs/system.js"></script>
+    <script>
+        System.transpiler = 'babel';
+    </script>
+    <script>
+        System.import('js/foo2').then(function(m) {
+            console.log(new m.Foo().es6); // yay
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
