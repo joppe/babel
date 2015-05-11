@@ -16,7 +16,9 @@ export default class Foo {
         this.es6 = 'yay';
     }
 
-    @route('/foo');
+    /* jshint ignore:start */
+    @route('/foo')
+    /* jshint ignore:end */
     test(t = 'foo') {
         console.log(t);
     }
